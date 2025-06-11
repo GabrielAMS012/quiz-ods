@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative; /* Adicionado para permitir posicionamento absoluto do link */
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Novos estilos para o link de administração */
+.admin-link {
+  position: absolute; /* Posiciona o link em relação ao container */
+  top: 20px; /* Distância do topo */
+  right: 20px; /* Distância da direita */
+  text-decoration: none;
+  color: #28a745; /* Cor do ícone */
+  font-size: 2em; /* Tamanho do ícone */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.admin-link:hover {
+  color: #218838; /* Escurece a cor no hover */
+}
+
+.question-card {
+  background-color: #e9ecef;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.question-text {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #34495e;
+  font-weight: bold;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+}
+
+.options-list li {
+  margin-bottom: 10px;
+}
+
+.options-list label {
+  display: block;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.options-list label:hover {
+  background-color: #e2e6ea;
+}
+
+.options-list input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.result-box {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+}

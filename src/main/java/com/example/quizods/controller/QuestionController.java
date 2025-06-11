@@ -17,6 +17,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/questions")
+@CrossOrigin(origins = "*")
 @Tag(name = "Gerenciamento de Perguntas", description = "Endpoints para criar, atualizar e listar perguntas do quiz.")
 public class QuestionController {
 
